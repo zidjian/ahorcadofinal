@@ -1,0 +1,203 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 16px;
+    min-width: 100vw;
+    min-height: 100vh;
+    background-image: url('../img/tarde.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+body > * {
+    width: 80%;
+}
+
+header {
+    text-align: center;
+    color: #fff;
+    margin: 2rem 1rem;
+    text-shadow: 0 0 .3rem #000;
+}
+
+h1 {
+    font-size: 3rem;
+    line-height: normal;
+    text-transform: uppercase;
+}
+
+header span {
+    font-size: 1.5rem;
+}
+
+main {
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.ahorcado {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ahorcado img {
+    width: 50%;
+    margin: auto;
+}
+
+.principal {
+    width: 60%;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.btn {
+    font-size: 3rem;
+    padding: .5rem 1rem;
+    border: none;
+    border-radius: .3rem;
+    -webkit-border-radius: .3rem;
+    -moz-border-radius: .3rem;
+    -ms-border-radius: .3rem;
+    -o-border-radius: .3rem;
+    box-shadow: .2rem .2rem .3rem #000;
+}
+
+.btn-principal {
+    background-color: rgb(47, 74, 228);
+    color: #fff;
+}
+
+.btn-teclado:hover {
+    background-color: rgb(47, 74, 228);
+    color: #fff;
+}
+
+.btn-teclado[disabled] {
+    background-color: rgb(105, 105, 105);
+    color: rgb(255, 255, 255);
+    cursor: not-allowed;
+}
+
+.mi_teclado {
+    width: 100%;
+}
+
+.teclado { 
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.teclado li {
+    margin: .3rem;
+}
+
+.teclado li button {
+    width: 100%;
+}
+
+.generador {
+    width: 100%;
+}
+
+h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    margin: 1rem 1rem;
+    text-shadow: 0 0 .3rem #000;
+}
+
+#palabra {
+    list-style: none;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: minmax(71px, auto);
+    font-size: 3rem;
+    text-align: center;
+}
+
+#palabra .con_palabra {
+    min-height: 71px;
+    border-bottom: solid 1px #000;
+}
+
+.mensaje {
+    text-align: center;
+    color: rgb(27, 27, 27);
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+/* ----- Modal  ----- */
+
+.estado {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.modal {
+    min-width: 360px;
+    padding: 3rem;
+    background: rgb(255, 255, 255);
+    border-radius: 2rem;
+    -webkit-border-radius: 2rem;
+    -moz-border-radius: 2rem;
+    -ms-border-radius: 2rem;
+    -o-border-radius: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h2 {
+    text-align: center;
+    padding-bottom: 1rem;
+    text-transform: uppercase;
+}
+
+#iniciar_juego {
+    font-size: 1rem;
+    padding: 1rem 3rem;
+    color: rgb(255, 255, 255);
+    background-color: rgb(43, 91, 223);
+    border: none;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+}
